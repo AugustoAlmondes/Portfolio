@@ -1,0 +1,252 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 10vh;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 2.7vw;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #009cff;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 1.5vw;
+}
+
+/* HEADER */
+
+#logo {
+    height: 8vw;
+}
+
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-desktop a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu-desktop a:hover {
+    text-shadow: 0px 0px 8px #5ec1ff;
+    color: #009cff;
+    transform: scale(1.2);
+}
+
+header nav ul {
+    list-style-type: none
+}
+
+header nav ul li {
+    font-size: 1.2vw;
+    display: inline-block;
+    padding: 3vw;
+
+}
+
+.contato button {
+    border: 2px;
+    padding: 1vw 3.5vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+
+.contato button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 55, 255);
+    transform: scale(1.06);
+    border: 0px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+#ideia {
+    height: 27vw;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 3vw;
+    }
+}
+
+.topo-site {
+    padding: 2vw 4%;
+}
+
+.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.txt-topo-site h1 {
+    font-size: 2.5vw;
+    color: white;
+    line-height: 2.4vw;
+}
+
+.txt-topo-site p {
+    font-size: 1.2vw;
+    margin: 1.8vw 0;
+    color: white;
+}
+
+.txt-topo-site h1 span {
+    color: #009cff;
+}
+
+/* ESTILO ESPECIALIDADES */
+
+section.especialidades {
+    padding: 40px;
+}
+
+section.especialidades .flex {
+    gap: 2vw;
+}
+
+.especialidades-box {
+    flex: 1;
+    color: white;
+    padding: 3vw;
+    /* border: 2px solid white; */
+    border-radius: 15px;
+    margin-top: 2.7vw;
+    transition: .2s;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #5ec1ff;
+}
+
+.especialidades-box i {
+    font-size: 4vw;
+    color: #5ec1ff;
+}
+
+.especialidades-box h3 {
+    font-size: 2.2vw;
+    margin: 1vw 0;
+}
+
+/* ESTILO SOBRE MIM */
+
+#eu {
+    height: 30vw;
+    border-radius: 15px;
+    box-shadow: -8px 10px 0px #003a73;
+}
+
+.sobre {
+    padding: 40px 4%;
+}
+
+.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.texto-sobre {
+    color: white;
+}
+
+.texto-sobre h2
+{
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+.texto-sobre span
+{
+    color: #009cff;
+}
+
+.texto-sobre p
+{
+    margin: 2vw 0;
+    text-align: justify;
+}
+
+.texto-sobre .redes button
+{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius:50%;
+    border: 0;
+    background-color: #009cff;
+    font-size: 1.5vw;
+    cursor: pointer;
+    margin: .3vw;
+    transition: .2s;
+}
+
+.texto-sobre .redes #facebook button:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 55, 255);
+    transform: scale(1.06);
+    border: 0px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+.texto-sobre .redes #whatsapp button:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 172, 26);
+    transform: scale(1.06);
+    border: 0px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.texto-sobre .redes #instagram button:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 157);
+    transform: scale(1.06);
+    border: 0px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
